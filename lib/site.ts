@@ -6,8 +6,8 @@ export const site = {
   // Web3Forms (free): get an access key at web3forms.com (it is emailed to you) and paste it below.
   // Using Formspree instead? Set endpoint to your https://formspree.io/f/xxxx URL and leave accessKey "".
   // Until a key/endpoint is set, the form honestly says it isn't connected.
-  form: { endpoint: "https://api.web3forms.com/submit", accessKey: "" },
-  contactEmail: "",                 // shown in the footer if set
+  form: { endpoint: "https://api.web3forms.com/submit", accessKey: "43060151-ecfb-47c8-8e59-3b1588831f7c" },
+  contactEmail: "belleVisuals@dorizabelle.com",                 // shown in the footer if set
   socials: [] as { label: string; url: string }[],   // e.g. { label: "Instagram", url: "https://instagram.com/..." }
 };
 
