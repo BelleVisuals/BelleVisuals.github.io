@@ -1,0 +1,15 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html{background:radial-gradient(60rem 40rem at 90% -5%,rgba(232,216,255,.22),transparent 60%),radial-gradient(50rem 40rem at -10% 70%,rgba(150,110,230,.25),transparent 60%),#4b3a72;background-attachment:fixed;color:#fff;-webkit-font-smoothing:antialiased}
+body{overflow-x:hidden}
+:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.bob{animation:bob 7s ease-in-out infinite;animation-delay:var(--d,0s)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@layer components{
+  .mono{@apply font-sans text-xs font-medium uppercase tracking-[.12em] text-mute}
+  .btn{@apply inline-flex min-h-[48px] items-center justify-center rounded-full border border-white/50 px-7 text-base font-medium text-paper transition-all hover:scale-105 hover:border-white}
+  .btn-pri{@apply border-white bg-white text-ink underline underline-offset-4 hover:bg-white}
+}
+@keyframes slide{to{transform:translateX(-50%)}}
+.marquee{animation:slide 45s linear infinite}
+.marquee:hover{animation-play-state:paused}
