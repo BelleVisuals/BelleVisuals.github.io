@@ -29,3 +29,6 @@ Unlisted Vimeo videos also need `hash` (the code after the ID in the share link)
 - Hover preview clip: 3–5s silent mp4, under ~2 MB → `previewVideo: "/projects/<slug>/preview.mp4"`
 - Hero loop: `public/hero.mp4` + `public/hero-poster.jpg`, then set `hero` in `lib/site.ts`
 - Full films live on Vimeo, not in the repo.
+
+## Shop
+Products live in `lib/shop.ts`. Images should be transparent PNG/WebP (~1200px, under ~300 KB) in `public/shop/`. Payment handles (Cash App / Zelle) live in `lib/site.ts` → `payments`; they only show when filled in. Optional per-product `buyUrl` (e.g. a Stripe Payment Link) adds a "Buy now" button. Order requests go through the same form (category "Shop order").

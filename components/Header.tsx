@@ -1,5 +1,5 @@
 import Link from "next/link";
-const links = [["Work", "/#work"], ["Services", "/services"], ["Consulting", "/consulting"], ["About", "/about"]] as const;
+const links = [["Work", "/#work"], ["Shop", "/shop"], ["Services", "/services"], ["Consulting", "/consulting"], ["About", "/about"]] as const;
 export default function Header() {
   return (
     <header className="sticky top-0 z-30 mx-3 mt-3 flex h-16 items-center justify-between rounded-full border border-white/25 bg-ink/70 px-6 backdrop-blur md:mx-8 md:mt-5 md:h-[72px] md:px-9">
